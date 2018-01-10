@@ -1,23 +1,28 @@
 <?php
 require('init.php');
-$result = mysqli_prepare($link, 'SELECT * FROM posts ORDER BY id DESC');
-$data =[];
-while ($row = mysqli_fetch_assoc($result)){
-	$data[]=$row;
+$result = mysqli_query($link, 'SELECT * FROM files ORDER BY id DESC');
+$data = [];
+while ($row = mysqli_fetch_assoc($result))
+{
+    $data[] = $row;
 }
+
 $title = "Home";
+
 ob_start();
 ?>
-<div class="col_1"><h2>Articles</h2></div>
 <div class="col">
-	<?php foreach ($data as $article): ?>
-	<article>
-		<h3> <a href="article.php?id=<?= $article['id'] ?>"><?= article['title']?></a></h3>
-		<div><?= nl2br($article['content']) ?></div>
-	</article>
-	<?php endforeach; ?>
+    <?php foreach ($data as $filer): ?>
+    <filer>
+        <h2><a href="filer.php?id=<?= $filer['id'] ?>"><?= $filer['title'] ?></a></h2>
+        <div><?= nl2br($filer['content']) ?></div>
+    </filer>
+    <hr>
+    <?php endforeach; ?>
 </div>
 <?php
 $content = ob_get_contents();
 ob_end_clean();
-require ('layout.php');
+
+require('layout.php');
+
