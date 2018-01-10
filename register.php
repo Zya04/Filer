@@ -46,7 +46,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
         mysqli_stmt_close($stmt);
         mysqli_close($link);
         mkdir('users/'.$username);
-        header('Location: profil.php');
+        header('Location: login.php');
         exit();
     }
 }
