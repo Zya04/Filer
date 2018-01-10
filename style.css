@@ -1,0 +1,31 @@
+header, nav, footer{
+    border: 1px solid black;
+}
+footer, header {
+	text-align: center;
+	background-color: orange;
+}
+
+header{
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+nav{
+	height: 65vh;
+}
+
+footer{
+	height: 13vh;
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+form{
+	text-align: center;
+}
+
+.form-group{
+	margin-bottom: 20px;
+}
