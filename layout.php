@@ -15,6 +15,9 @@
             </header>
             <nav class="row">
                 <div class="col-2"><a href="index.php">Home</a> -
+                    <?php if (isset($_SESSION['username'])):?>
+                        <a href="profil.php">Profil</a> -
+                    <?php endif; ?>
                     <?php if (!isset($_SESSION['username'])): ?>
                     <a href="register.php">Register</a> -
                     <?php endif; ?>
