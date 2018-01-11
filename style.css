@@ -1,7 +1,7 @@
 header, nav, footer{
     border: 1px solid black;
 }
-footer, header {
+footer, header,{
 	text-align: center;
 	background-color: orange;
 }
@@ -28,7 +28,4 @@ form{
 
 .form-group{
 	margin-bottom: 20px;
-}
-.col_profil{
-	text-align: center;
 }
