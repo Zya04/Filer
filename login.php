@@ -17,7 +17,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']))
         session_start();
         $_SESSION['id'] = $user['id'];
         $_SESSION['username'] = $user['username'];
-        header('Location: profil.php');
+        header('Location: index.php');
         exit();
        
     }
