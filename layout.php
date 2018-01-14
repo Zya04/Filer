@@ -30,7 +30,7 @@
                 </div>
                 <div class="col-2">
                     <?php if (isset($_SESSION['username'])): ?>
-                    Logged in as <?= $_SESSION['username'] ?>
+                    Logged in as <?= $_SESSION['username'] ?> <br> <br>
                     <?php else: ?> <br>
                     Not logged in
                     <?php endif; ?>
