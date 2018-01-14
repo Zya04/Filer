@@ -1,9 +1,9 @@
 header, nav, footer{
-    border: 1px solid black;
+    border: 1px solid white;
 }
-footer, header,{
+footer, header{
 	text-align: center;
-	background-color: orange;
+	background-color: orange ;
 }
 
 header{
@@ -22,7 +22,14 @@ footer{
 	align-items: center;
 	justify-content: center;
 }
-form{
+
+.table_profile{
+    margin-left:auto; 
+    margin-right:auto; 
+    border-spacing: 30px;
+}
+
+form, h2, article{
 	text-align: center;
 }
 
