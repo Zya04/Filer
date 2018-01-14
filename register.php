@@ -45,7 +45,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         mysqli_close($link);
-        mkdir('Utilisateurs/'.$username);
+        mkdir('users/'.$username);
         header('Location: login.php');
         exit();
     }
