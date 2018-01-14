@@ -45,7 +45,7 @@ if (!empty($_POST['firstname']) && !empty($_POST['lastname'])
         mysqli_stmt_execute($stmt);
         mysqli_stmt_close($stmt);
         mysqli_close($link);
-        mkdir('users/'.$username);
+        mkdir('Utilisateurs/'.$username);
         header('Location: login.php');
         exit();
     }
@@ -62,19 +62,19 @@ ob_start();
         <?= $error_password_repeat?>
 
         <div class="form-group"> 
-            <input type="text" name="firstname" id="firstname" placeholder="firstname" class="form-control" >
+            <input type="text" name="firstname" id="firstname" placeholder="firstname" class="form-control" value="<?= $firstname ?>">
         </div>
         <div class="form-group">
-            <input type="text" name="lastname" id="lastname" placeholder="lastname" class="form-control" >
+            <input type="text" name="lastname" id="lastname" placeholder="lastname" class="form-control"  value="<?= $lastname ?>">
         </div>
         <div class="form-group">
-            <input type="text" name="username" id="username" placeholder="username" class="form-control">
+            <input type="text" name="username" id="username" placeholder="username" class="form-control" value="<?= $username ?>">
         </div>
         <div class="form-group">
-            <input type="email" name="email" id="email" placeholder="email" class="form-control" >
+            <input type="email" name="email" id="email" placeholder="email" class="form-control" value="<?= $email ?>">
         </div>
         <div class="form-group">
-            <input type="password" name="password" id="password" class="form-control" placeholder="password" >
+            <input type="password" name="password" id="password" class="form-control" placeholder="password">
         </div>
         <div class="form-group">
             <input type="password" name="password_repeat" id="password_repeat" class="form-control" placeholder="password repeat" >
