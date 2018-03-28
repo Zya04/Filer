@@ -39,7 +39,7 @@
                 </div>
             </nav>
         </div>
-    <main>
+    </main>
     <footer>
         &copy; Nassurally Zya
     </footer>

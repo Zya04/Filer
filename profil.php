@@ -8,7 +8,7 @@ if(isset($_POST['sendFile'])){
     if (move_uploaded_file($file_tmp_name, $file_dest)) {
         $success;
     } else {
-        echo "sa marche po";
+        echo "don't work";
     }
 }
 
@@ -26,15 +26,9 @@ $title = "profil";
     <table class="table_profile">
         <tr>
             <td>File name</td>
-            <td>Rename</td>
-            <td>Delete</td>
-            <td>Download</td>
         </tr>
         <tr>
             <td><?= $success ?> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
         </tr>
     </table>
 </article>
@@ -43,36 +37,3 @@ $title = "profil";
 $content = ob_get_contents();
 ob_end_clean();
 require('layout.php'); 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
