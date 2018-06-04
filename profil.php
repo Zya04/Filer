@@ -14,7 +14,7 @@ if(isset($_POST['sendFile'])){
 
 $title = "profil";
 ?>
-<article>
+<!--<article>
     <div class="col_profil">
         <h2>Welcome in your profile! </h2>
     </div>
@@ -31,7 +31,7 @@ $title = "profil";
             <td><?= $success ?> </td>
         </tr>
     </table>
-</article>
+</article> -->
 
 <?php
 $content = ob_get_contents();

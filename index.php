@@ -6,7 +6,7 @@ ob_start();
 <div class="col">
     <?php 
 		if (isset($_SESSION['username'])){
-			echo "<h2> Go to your profil for upload files. </h2>";
+			echo "<h2> the file upload is currently off. </h2>";
 		}
 		else {
 			echo " ";
